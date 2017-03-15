@@ -18,9 +18,19 @@ var cnIp16Range = {
 var subnetIpRangeList = [
 0,1,
 167772160,184549376,	//10.0.0.0/8
-2886729728,2887778304,	//172.16.0.0/12
-3232235520,3232301056,	//192.168.0.0/16
+convertAddress('100.64.0.0'), convertAddress('100.127.255.255'),
 2130706432,2130706688	//127.0.0.0/24
+convertAddress('169.254.0.0'),convertAddress('169.254.255.255'),
+2886729728,2887778304,	//172.16.0.0/12
+convertAddress('192.0.0.0'),convertAddress('192.0.0.255'),
+convertAddress('192.0.2.0'),convertAddress('192.0.2.255'),
+convertAddress('192.88.99.0'),convertAddress('192.88.99.255'),
+convertAddress('198.18.0.0'),convertAddress('198.19.255.255'),
+convertAddress('198.51.100.0'),convertAddress('198.51.100.255'),
+convertAddress('203.0.113.0'),convertAddress('203.0.113.255'),
+convertAddress('224.0.0.0'),convertAddress('239.255.255.255'),
+convertAddress('240.0.0.0'),convertAddress('255.255.255.254'),
+3232235520,3232301056,	//192.168.0.0/16
 ];
 
 var hasOwnProperty = Object.hasOwnProperty;
